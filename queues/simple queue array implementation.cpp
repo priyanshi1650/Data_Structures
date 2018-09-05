@@ -35,18 +35,20 @@ public:
             cout<<"Queue is empty"<<endl;
         else if(front_==rear)
         {
+            cout<<arr[front_]<<endl;
             rear=-1;
             front_=-1;
         }
         else
         {
+            cout<<arr[front_]<<endl;
             front_++;
         }
     }
     void display()
     {
         for (int i=front_;i<=rear;i++)
-            cout<<arr[i]<<endl;
+            Dequeue();
     }
 };
 int main()
