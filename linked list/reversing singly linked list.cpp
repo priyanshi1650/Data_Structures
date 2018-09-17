@@ -58,13 +58,13 @@ void rev()
 {
 struct node *current=start;
 struct node *prev=NULL;
-struct node *next=NULL;
+struct node *next1=NULL;
  while (current != NULL)
         {
-            next = current->next;
+            next1 = current->next;
             current->next = prev;
             prev = current;
-            current = next;
+            current = next1;
         }
         start = prev;
   }
@@ -74,6 +74,6 @@ int main()
 {
 abc obj;
 obj.create();
-obj.rev();
+ obj.rev();
 obj.show();
 }
