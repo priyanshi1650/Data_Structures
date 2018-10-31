@@ -21,13 +21,11 @@ void merging(int *arr,int p,int q,int r)
     k=p;
      for (t=0;t<m+n;t++)
     {
-        if (a[i]<b[j] || j==n)
+        if (a[i]<b[j] && i!=m || j==n)
         {
-            if(i!=m)
-            {
             arr[k]=a[i];
             i++;
-            }
+
         }
         else if(j!=n)
         {

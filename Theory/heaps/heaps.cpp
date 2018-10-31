@@ -107,7 +107,7 @@ int main()
 {
 	heap obj;
 	int n;
-	cout<<"Enter number of elements in you want in heap\n";
+	cout<<"Enter number of elements you want in heap\n";
 	cin>>n;
 	int arr[n];
 	cout<<"Enter elements in array\n";
